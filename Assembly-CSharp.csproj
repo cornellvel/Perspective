@@ -114,6 +114,7 @@
      <Compile Include="Assets\_Scripts\Thrower.cs" />
      <Compile Include="Assets\_Scripts\Thrower_2.cs" />
      <Compile Include="Assets\_Scripts\Turning.cs" />
+     <Compile Include="Assets\_Scripts\ViveCursor.cs" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
      <None Include="Assets\Materials\Mirror.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
