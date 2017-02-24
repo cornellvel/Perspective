@@ -120,7 +120,8 @@ public class ViveCursor : MonoBehaviour
 
     void Update()
     {
-        Ray raycast = new Ray(transform.position, transform.forward);
+        Vector3 temp = transform.forward;
+        Ray raycast = new Ray(transform.position, temp);
 
         RaycastHit hitObject;
         bool rayHit = Physics.Raycast(raycast, out hitObject);

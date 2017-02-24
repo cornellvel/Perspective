@@ -88,6 +88,7 @@
      <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
      <Compile Include="Assets\_Scripts\BallScript.cs" />
      <Compile Include="Assets\_Scripts\BallScript_2.cs" />
+     <Compile Include="Assets\_Scripts\BallScript_control.cs" />
      <Compile Include="Assets\_Scripts\Controller.cs" />
      <Compile Include="Assets\_Scripts\DialogueBox.cs" />
      <Compile Include="Assets\_Scripts\HandScript.cs" />
@@ -113,6 +114,7 @@
      <Compile Include="Assets\_Scripts\StartMenu.cs" />
      <Compile Include="Assets\_Scripts\Thrower.cs" />
      <Compile Include="Assets\_Scripts\Thrower_2.cs" />
+     <Compile Include="Assets\_Scripts\Thrower_control.cs" />
      <Compile Include="Assets\_Scripts\Turning.cs" />
      <Compile Include="Assets\_Scripts\ViveCursor.cs" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
