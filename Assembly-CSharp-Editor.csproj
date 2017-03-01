@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1211F569-83CF-18CC-554F-964FC4C090F7}</ProjectGuid>
+    <ProjectGuid>{4D75CB53-1F26-2848-5C84-859BB21FF7DD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -61,7 +61,7 @@
      <None Include="Assets\SteamVR\Resources\SteamVR_ColorOut.shader" />
      <None Include="Assets\Mixamo\Fuse\ReadMe.txt" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/cornellvel/Dropbox/Perspective/Experiment_active/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/cornellvel/Dropbox/Perspective/Experiment_Agency/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -96,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{71FB5C90-CF3A-B94A-B300-4993775ADB71}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{5BD21A48-CC4B-D4E0-0BE2-1DE6E6B1C0F9}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

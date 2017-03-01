@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{71FB5C90-CF3A-B94A-B300-4993775ADB71}</ProjectGuid>
+    <ProjectGuid>{5BD21A48-CC4B-D4E0-0BE2-1DE6E6B1C0F9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -88,6 +88,7 @@
      <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
      <Compile Include="Assets\_Scripts\BallScript.cs" />
      <Compile Include="Assets\_Scripts\BallScript_2.cs" />
+     <Compile Include="Assets\_Scripts\BallScript_control.cs" />
      <Compile Include="Assets\_Scripts\Controller.cs" />
      <Compile Include="Assets\_Scripts\DialogueBox.cs" />
      <Compile Include="Assets\_Scripts\HandScript.cs" />
@@ -113,8 +114,11 @@
      <Compile Include="Assets\_Scripts\StartMenu.cs" />
      <Compile Include="Assets\_Scripts\Thrower.cs" />
      <Compile Include="Assets\_Scripts\Thrower_2.cs" />
+     <Compile Include="Assets\_Scripts\Thrower_control.cs" />
+     <Compile Include="Assets\_Scripts\ThrowingTest.cs" />
      <Compile Include="Assets\_Scripts\Turning.cs" />
      <Compile Include="Assets\_Scripts\ViveCursor.cs" />
+     <Compile Include="Assets\ballScript_agency.cs" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
      <None Include="Assets\Materials\Mirror.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
