@@ -10,6 +10,8 @@ public class ballScript_agency : MonoBehaviour {
     public GameObject player1_ground; //ground next to first
     public GameObject player2_ground; //ground next to second
     public GameObject self_ground; //ground next to third
+    public GameObject animator1; //first guy's animation
+    public GameObject animator2; //second guy's animation
     public Rigidbody rigid;
     public Vector3 currBallPosition;
 
@@ -48,6 +50,8 @@ public class ballScript_agency : MonoBehaviour {
             ballOnGround = true;
             Debug.Log("collision of ball with SELF GROUND");
             // TO DO: CREATE AND PLAY IDLE ANIMATION FOR AVATARS
+            //animator1.play();
+            //animator2.play();
         }
         // set ballInHand to true if ball has collided with the player's hand
         if (collisionInfo.gameObject.name == "Empty_Self_Male_Rigged")
@@ -55,7 +59,7 @@ public class ballScript_agency : MonoBehaviour {
             ballInHand = true;
             Debug.Log("collision of ball with SELF HAND");
             // TO DO: CREATE AND PLAY IDLE ANIMATION FOR AVATARS
-            //target.animation.Play()
+            //animator1.Play()
         }
     }
 

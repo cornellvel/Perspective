@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/Scene1_1stP_Female.unity
+- path: Assets/Scene/Agency test_Scene2_1st person_Male.unity
   isLoaded: 1
   isActive: 1
