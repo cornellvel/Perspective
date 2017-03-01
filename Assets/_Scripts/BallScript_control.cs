@@ -21,8 +21,11 @@ public class BallScript_control : MonoBehaviour {
 
     // registering the trigger
     public bool ballOnGround = false;
+<<<<<<< HEAD
     public bool thrown = false;
     public bool calledTwo = false;
+=======
+>>>>>>> e93b9d563ec1aafb84bf404bee66a14de2f85347
 
 
     // var lastPos:Vector3;
@@ -41,16 +44,25 @@ public class BallScript_control : MonoBehaviour {
     void Update () {
         if (counter == 5)
         {
+<<<<<<< HEAD
             // pause animations
+=======
+>>>>>>> e93b9d563ec1aafb84bf404bee66a14de2f85347
             Debug.Log("manually calling pick up");
             pickUpBall();
             ReleaseMe();
         }
+<<<<<<< HEAD
         if (counter == 2 && !calledTwo) // fix this
         {
             // pause animations
             Debug.Log("manually calling release");
             calledTwo = true;
+=======
+        if (counter == 3) // fix this
+        {
+            Debug.Log("manually calling release");
+>>>>>>> e93b9d563ec1aafb84bf404bee66a14de2f85347
             ReleaseMe();
         }
     }
@@ -87,7 +99,10 @@ public class BallScript_control : MonoBehaviour {
 
     public void ReleaseMe()
     {
+<<<<<<< HEAD
         thrown = false;
+=======
+>>>>>>> e93b9d563ec1aafb84bf404bee66a14de2f85347
         CancelInvoke();
         counter = counter + 1; //increments for each trial, on the ball throw (purpose: when ball falls)
         transform.parent = null;
@@ -102,6 +117,7 @@ public class BallScript_control : MonoBehaviour {
                 break;
             case 3:
                 // self throws
+<<<<<<< HEAD
                 trackedObject = GameObject.FindWithTag("Right Controller").GetComponent<SteamVR_TrackedObject>();
                 device = SteamVR_Controller.Input((int)trackedObject.index);
                 Debug.Log(device);
@@ -111,6 +127,9 @@ public class BallScript_control : MonoBehaviour {
                     thrown = true;
                 }
                 switchInt = 2;
+=======
+                switchInt = 6;
+>>>>>>> e93b9d563ec1aafb84bf404bee66a14de2f85347
                 break;
             //first pickup should happen here
             case 4:
@@ -124,6 +143,7 @@ public class BallScript_control : MonoBehaviour {
             //second pickup should happen here
             case 6:
                 // self throws
+<<<<<<< HEAD
                 trackedObject = GameObject.FindWithTag("Right Controller").GetComponent<SteamVR_TrackedObject>();
                 device = SteamVR_Controller.Input((int)trackedObject.index);
                 if (device.GetPress(triggerButton))
@@ -131,6 +151,8 @@ public class BallScript_control : MonoBehaviour {
                     Debug.Log("trigger pressed; self is throwing for case 6");
                     thrown = true;
                 }
+=======
+>>>>>>> e93b9d563ec1aafb84bf404bee66a14de2f85347
                 switchInt = 3;
                 break;
             case 7:
@@ -150,11 +172,25 @@ public class BallScript_control : MonoBehaviour {
     public void MoveToOther()
     {
         GameObject desttarg = getDestTarg();
+<<<<<<< HEAD
         if ((counter == 6 || counter == 3) && thrown)
         {
             Debug.Log("self to other player: "+desttarg);
             transform.position = Vector3.MoveTowards(transform.position, desttarg.transform.position, .06f);
             currBallPosition = desttarg.transform.position;
+=======
+        if (counter == 6)
+        {
+            Debug.Log("self is throwing");
+            trackedObject = GameObject.FindWithTag("Right Controller").GetComponent<SteamVR_TrackedObject>();
+            device = SteamVR_Controller.Input((int)trackedObject.index);
+            if (device.GetPress(triggerButton))
+            {
+                Debug.Log("trigger pressed; self is throwing");
+                transform.position = Vector3.MoveTowards(transform.position, desttarg.transform.position, .06f);
+                currBallPosition = desttarg.transform.position;
+            }
+>>>>>>> e93b9d563ec1aafb84bf404bee66a14de2f85347
         }
         else
         {
